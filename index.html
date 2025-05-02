@@ -4,113 +4,141 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Barbearia Moderna</title>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       margin: 0;
-      font-family: 'Oswald', sans-serif;
-      background-color: #0d0d0d;
+      font-family: Arial, sans-serif;
+      background-color: #000;
       color: white;
     }
+
     header {
-      background: url('https://images.unsplash.com/photo-1588776814546-7ab8c69a2e26') no-repeat center/cover;
-      height: 100vh;
+      background-color: #111;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3em;
-      background: rgba(0, 0, 0, 0.6);
       padding: 20px;
-      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(255, 215, 0, 0.2);
     }
-    .btn {
-      margin-top: 20px;
-      display: inline-block;
-      padding: 15px 30px;
-      background: #1db954;
+
+    header img {
+      height: 60px;
+    }
+
+    .btns-header a {
+      margin-left: 10px;
+      padding: 10px 20px;
+      background: gold;
       color: black;
       text-decoration: none;
-      font-weight: bold;
       border-radius: 5px;
+      font-weight: bold;
     }
-    section {
-      padding: 60px 20px;
+
+    .section {
+      padding: 50px 20px;
       text-align: center;
     }
-    .services {
+
+    h2 {
+      color: gold;
+      margin-bottom: 20px;
+    }
+
+    .carousel {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 30px;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 20px 0;
     }
-    .service {
-      background: #1a1a1a;
-      padding: 30px;
+
+    .carousel img, .review {
+      min-width: 300px;
       border-radius: 10px;
-      width: 250px;
+      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
     }
-    .service i {
-      font-size: 2em;
-      margin-bottom: 10px;
-      color: #1db954;
+
+    .review {
+      background-color: #1a1a1a;
+      padding: 20px;
+      text-align: left;
     }
+
     footer {
-      background: #111;
+      background-color: #111;
       text-align: center;
-      padding: 30px;
-      color: #777;
+      padding: 20px;
+      font-size: 14px;
+      border-top: 1px solid #333;
+    }
+
+    /* Scroll */
+    .carousel::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .carousel::-webkit-scrollbar-thumb {
+      background: gold;
+      border-radius: 4px;
     }
   </style>
-  <script src="https://kit.fontawesome.com/a2d9f7d294.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<header>
-  <div>
-    <h1>Barbearia Moderna<br>seu corte no nosso melhor tempo</h1>
-    <a class="btn" href="https://wa.me/5574999055135" target="_blank">Agende seu Corte</a>
-  </div>
-</header>
-
-<section id="servicos">
-  <h2>Nossos Serviços</h2>
-  <div class="services">
-    <div class="service">
-      <i class="fas fa-cut"></i>
-      <h3>Corte Masculino</h3>
-      <p>Moderno, degradê ou tradicional.</p>
+  <header>
+    <img src="GOLDEN HOUR - 3.png" alt="Barbearia Moderna Logo">
+    <div class="btns-header">
+      <a href="https://www.instagram.com/seuusuario" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://wa.me/5588999999999" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
     </div>
-    <div class="service">
-      <i class="fas fa-beard"></i>
-      <h3>Barba</h3>
-      <p>Navalha, alinhamento e hidratação.</p>
+  </header>
+
+  <section class="section">
+    <h2>Transformando seu estilo no melhor tempo</h2>
+    <p>Venha viver a experiência única da Barbearia Moderna, onde estilo e excelência se encontram!</p>
+  </section>
+
+  <section class="section">
+    <h2>Galeria de Cortes</h2>
+    <div class="carousel">
+      <img src="IMG_2245.jpeg" alt="Corte 1" width="300">
+      <img src="IMG_6122.png" alt="Corte 2" width="300">
+      <img src="IMG_6158.jpeg" alt="Corte 3" width="300">
+      <img src="image.jpg" alt="Corte 4" width="300">
+      <img src="Limpeza de pele disponível.png" alt="Corte 5" width="300">
     </div>
-    <div class="service">
-      <i class="fas fa-gem"></i>
-      <h3>Pacote Completo</h3>
-      <p>Corte + barba com preço especial.</p>
+  </section>
+
+  <section class="section">
+    <h2>O que dizem nossos clientes</h2>
+    <div class="carousel">
+      <div class="review">
+        <strong>Lucas M.</strong><br>
+        “Atendimento top e corte impecável, virei cliente fiel!”
+      </div>
+      <div class="review">
+        <strong>Rafaela P.</strong><br>
+        “Ambiente limpo e organizado. Super recomendo.”
+      </div>
+      <div class="review">
+        <strong>João V.</strong><br>
+        “Além do corte, a experiência é muito boa. Parabéns!”
+      </div>
+      <div class="review">
+        <strong>Marcelo T.</strong><br>
+        “Melhor barbearia da região, atendimento nota 10!”
+      </div>
+      <div class="review">
+        <strong>Bruno C.</strong><br>
+        “Corte moderno, pontualidade e excelente serviço.”
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="depoimentos">
-  <h2>O que dizem nossos clientes</h2>
-  <p>"A melhor barbearia da cidade! Atendimento top e corte perfeito." – João</p>
-  <p>"Ambiente moderno e barbeiros de qualidade. Recomendo muito!" – Lucas</p>
-</section>
-
-<section>
-  <h2>Fale com a Gente</h2>
-  <a class="btn" href="https://wa.me/5599999999999" target="_blank">WhatsApp</a>
-</section>
-
-<footer>
-  © 2025 Barbearia Moderna | Desenvolvido com criatividade
-</footer>
+  <footer>
+    © 2025 Barbearia Moderna - Todos os direitos reservados
+  </footer>
 
 </body>
 </html>
