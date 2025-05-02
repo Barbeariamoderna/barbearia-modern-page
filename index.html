@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Barbearia Moderna</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       background-color: #000;
-      color: white;
+      color: #fff;
     }
 
     header {
-      background-color: #111;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      background-color: #111;
       padding: 20px;
-      box-shadow: 0 4px 6px rgba(255, 215, 0, 0.2);
+      flex-wrap: wrap;
     }
 
     header img {
       height: 60px;
     }
 
+    .btns-header {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
     .btns-header a {
-      margin-left: 10px;
-      padding: 10px 20px;
       background: gold;
       color: black;
+      padding: 10px 20px;
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btns-header a:hover {
+      background: #ffd700cc;
     }
 
     .section {
-      padding: 50px 20px;
+      padding: 40px 20px;
       text-align: center;
     }
 
     h2 {
       color: gold;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      max-width: 600px;
+      margin: auto;
+      font-size: 18px;
     }
 
     .carousel {
@@ -51,18 +67,25 @@
       overflow-x: auto;
       gap: 20px;
       padding: 20px 0;
+      scroll-behavior: smooth;
     }
 
     .carousel img, .review {
       min-width: 300px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+      background-color: #1a1a1a;
+    }
+
+    .carousel img {
+      height: 200px;
+      object-fit: cover;
     }
 
     .review {
-      background-color: #1a1a1a;
       padding: 20px;
       text-align: left;
+      color: #fff;
     }
 
     footer {
@@ -73,69 +96,58 @@
       border-top: 1px solid #333;
     }
 
-    /* Scroll */
     .carousel::-webkit-scrollbar {
-      height: 8px;
+      height: 6px;
     }
 
     .carousel::-webkit-scrollbar-thumb {
       background: gold;
-      border-radius: 4px;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
 
+  <!-- Cabeçalho -->
   <header>
-    <img src="GOLDEN HOUR - 3.png" alt="Barbearia Moderna Logo">
+    <img src="./GOLDEN-HOUR-logo.png" alt="Logo Barbearia Moderna">
     <div class="btns-header">
       <a href="https://www.instagram.com/seuusuario" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
       <a href="https://wa.me/5588999999999" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
     </div>
   </header>
 
+  <!-- Introdução -->
   <section class="section">
-    <h2>Transformando seu estilo no melhor tempo</h2>
-    <p>Venha viver a experiência única da Barbearia Moderna, onde estilo e excelência se encontram!</p>
+    <h2>Seu estilo em mãos profissionais</h2>
+    <p>Na Barbearia Moderna, oferecemos mais do que cortes — entregamos uma experiência completa com estilo, qualidade e personalidade.</p>
   </section>
 
+  <!-- Galeria -->
   <section class="section">
     <h2>Galeria de Cortes</h2>
     <div class="carousel">
-      <img src="IMG_2245.jpeg" alt="Corte 1" width="300">
-      <img src="IMG_6122.png" alt="Corte 2" width="300">
-      <img src="IMG_6158.jpeg" alt="Corte 3" width="300">
-      <img src="image.jpg" alt="Corte 4" width="300">
-      <img src="Limpeza de pele disponível.png" alt="Corte 5" width="300">
+      <img src="./IMG_2245.jpeg" alt="Corte 1">
+      <img src="./IMG_6122.png" alt="Corte 2">
+      <img src="./IMG_6158.jpeg" alt="Corte 3">
+      <img src="./image.jpg" alt="Corte 4">
+      <img src="./Limpeza-de-pele.png" alt="Corte 5">
     </div>
   </section>
 
+  <!-- Avaliações -->
   <section class="section">
     <h2>O que dizem nossos clientes</h2>
     <div class="carousel">
-      <div class="review">
-        <strong>Lucas M.</strong><br>
-        “Atendimento top e corte impecável, virei cliente fiel!”
-      </div>
-      <div class="review">
-        <strong>Rafaela P.</strong><br>
-        “Ambiente limpo e organizado. Super recomendo.”
-      </div>
-      <div class="review">
-        <strong>João V.</strong><br>
-        “Além do corte, a experiência é muito boa. Parabéns!”
-      </div>
-      <div class="review">
-        <strong>Marcelo T.</strong><br>
-        “Melhor barbearia da região, atendimento nota 10!”
-      </div>
-      <div class="review">
-        <strong>Bruno C.</strong><br>
-        “Corte moderno, pontualidade e excelente serviço.”
-      </div>
+      <div class="review"><strong>Lucas M.</strong><br>“Corte top, atendimento melhor ainda!”</div>
+      <div class="review"><strong>Rafaela P.</strong><br>“Ambiente organizado e profissionais excelentes.”</div>
+      <div class="review"><strong>João V.</strong><br>“Melhor corte que já fiz, recomendo demais!”</div>
+      <div class="review"><strong>Marcelo T.</strong><br>“Preço justo e qualidade alta.”</div>
+      <div class="review"><strong>Bruno C.</strong><br>“Fui indicado e agora sou cliente fiel.”</div>
     </div>
   </section>
 
+  <!-- Rodapé -->
   <footer>
     © 2025 Barbearia Moderna - Todos os direitos reservados
   </footer>
