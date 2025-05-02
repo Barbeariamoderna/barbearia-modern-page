@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barbearia Moderna</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #111;
+      color: white;
+    }
+    header {
+      background: linear-gradient(90deg, #000, #1db954);
+      padding: 30px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      text-align: center;
+      background: #222;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #1db954;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .servicos, .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #1db954;
+      color: #000;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      border-top: 1px solid #333;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Barbearia Moderna</h1>
+  <p>Estilo, atitude e excelência em cada corte</p>
+</header>
+
+<nav>
+  <a href="#sobre">Sobre</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#galeria">Galeria</a>
+  <a href="#contato">Contato</a>
+</nav>
+
+<section id="sobre">
+  <h2>Sobre Nós</h2>
+  <p>Somos a barbearia que entende o estilo do homem moderno. Profissionalismo, ambiente top e atendimento de respeito.</p>
+</section>
+
+<section id="servicos">
+  <h2>Serviços</h2>
+  <div class="servicos">
+    <div class="card">
+      <h3>Corte Masculino</h3>
+      <p>Do clássico ao degradê moderno</p>
+      <strong>R$ 25,00</strong>
+    </div>
+    <div class="card">
+      <h3>Barba</h3>
+      <p>Alinhamento, navalha e relax</p>
+      <strong>R$ 15,00</strong>
+    </div>
+    <div class="card">
+      <h3>Pacote Corte + Barba</h3>
+      <p>Combo completo</p>
+      <strong>R$ 35,00</strong>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <h2>Galeria</h2>
+  <div class="galeria">
+    <div class="card">
+      <img src="https://via.placeholder.com/250x150" alt="Corte 1">
+      <p>Degradê alto com risco</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/250x150" alt="Corte 2">
+      <p>Barba alinhada na navalha</p>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <p>Agende seu horário agora mesmo</p>
+  <a class="btn" href="https://wa.me/5599999999999" target="_blank">Chamar no WhatsApp</a><br><br>
+  <a class="btn" href="https://instagram.com/seuinstagram" target="_blank">Instagram</a>
+</section>
+
+<footer>
+  © 2025 Barbearia Moderna. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
