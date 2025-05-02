@@ -4,135 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Barbearia Moderna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #111;
+      font-family: 'Oswald', sans-serif;
+      background-color: #0d0d0d;
       color: white;
     }
     header {
-      background: linear-gradient(90deg, #000, #1db954);
-      padding: 30px;
+      background: url('https://images.unsplash.com/photo-1588776814546-7ab8c69a2e26') no-repeat center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    nav {
-      text-align: center;
-      background: #222;
-      padding: 10px 0;
-    }
-    nav a {
-      color: #1db954;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .servicos, .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .card {
-      background: #1a1a1a;
+      font-size: 3em;
+      background: rgba(0, 0, 0, 0.6);
       padding: 20px;
-      border-radius: 10px;
-      width: 250px;
-    }
-    .card img {
-      width: 100%;
       border-radius: 10px;
     }
     .btn {
-      display: inline-block;
       margin-top: 20px;
-      padding: 10px 20px;
+      display: inline-block;
+      padding: 15px 30px;
       background: #1db954;
-      color: #000;
-      border-radius: 5px;
+      color: black;
       text-decoration: none;
       font-weight: bold;
+      border-radius: 5px;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .service {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 10px;
+      width: 250px;
+    }
+    .service i {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #1db954;
     }
     footer {
-      text-align: center;
-      padding: 20px;
       background: #111;
-      border-top: 1px solid #333;
-      color: #aaa;
+      text-align: center;
+      padding: 30px;
+      color: #777;
     }
   </style>
+  <script src="https://kit.fontawesome.com/a2d9f7d294.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <header>
-  <h1>Barbearia Moderna</h1>
-  <p>Estilo, atitude e excelência em cada corte</p>
+  <div>
+    <h1>Barbearia Moderna<br>Estilo, atitude e excelência</h1>
+    <a class="btn" href="https://wa.me/5599999999999" target="_blank">Agende seu Corte</a>
+  </div>
 </header>
 
-<nav>
-  <a href="#sobre">Sobre</a>
-  <a href="#servicos">Serviços</a>
-  <a href="#galeria">Galeria</a>
-  <a href="#contato">Contato</a>
-</nav>
-
-<section id="sobre">
-  <h2>Sobre Nós</h2>
-  <p>Somos a barbearia que entende o estilo do homem moderno. Profissionalismo, ambiente top e atendimento de respeito.</p>
-</section>
-
 <section id="servicos">
-  <h2>Serviços</h2>
-  <div class="servicos">
-    <div class="card">
+  <h2>Nossos Serviços</h2>
+  <div class="services">
+    <div class="service">
+      <i class="fas fa-cut"></i>
       <h3>Corte Masculino</h3>
-      <p>Do clássico ao degradê moderno</p>
-      <strong>R$ 25,00</strong>
+      <p>Moderno, degradê ou tradicional.</p>
     </div>
-    <div class="card">
+    <div class="service">
+      <i class="fas fa-beard"></i>
       <h3>Barba</h3>
-      <p>Alinhamento, navalha e relax</p>
-      <strong>R$ 15,00</strong>
+      <p>Navalha, alinhamento e hidratação.</p>
     </div>
-    <div class="card">
-      <h3>Pacote Corte + Barba</h3>
-      <p>Combo completo</p>
-      <strong>R$ 35,00</strong>
-    </div>
-  </div>
-</section>
-
-<section id="galeria">
-  <h2>Galeria</h2>
-  <div class="galeria">
-    <div class="card">
-      <img src="https://via.placeholder.com/250x150" alt="Corte 1">
-      <p>Degradê alto com risco</p>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/250x150" alt="Corte 2">
-      <p>Barba alinhada na navalha</p>
+    <div class="service">
+      <i class="fas fa-gem"></i>
+      <h3>Pacote Completo</h3>
+      <p>Corte + barba com preço especial.</p>
     </div>
   </div>
 </section>
 
-<section id="contato">
-  <h2>Contato</h2>
-  <p>Agende seu horário agora mesmo</p>
-  <a class="btn" href="https://wa.me/5599999999999" target="_blank">Chamar no WhatsApp</a><br><br>
-  <a class="btn" href="https://instagram.com/seuinstagram" target="_blank">Instagram</a>
+<section id="depoimentos">
+  <h2>O que dizem nossos clientes</h2>
+  <p>"A melhor barbearia da cidade! Atendimento top e corte perfeito." – João</p>
+  <p>"Ambiente moderno e barbeiros de qualidade. Recomendo muito!" – Lucas</p>
+</section>
+
+<section>
+  <h2>Fale com a Gente</h2>
+  <a class="btn" href="https://wa.me/5599999999999" target="_blank">WhatsApp</a>
 </section>
 
 <footer>
-  © 2025 Barbearia Moderna. Todos os direitos reservados.
+  © 2025 Barbearia Moderna | Desenvolvido com criatividade
 </footer>
 
 </body>
